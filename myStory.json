@@ -1,58 +1,97 @@
 {
-    "Title": "Campus Life on the West Side",
-    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
-    "InitialLocation": "Kresge",
+    "Title": "Draconic Musings",
+    "Credits": "Created by Victoria Morgan (raenglan@ucsc.edu).",
+    "InitialLocation": "Hoard",
     "Locations": {
-        "Kresge": {
-            "Body": "This is Kresge College, lots of nice trees.",
+        "Hoard": {
+            "Body": "Every dragon needs a horde, and this is yours.",
             "Choices": [
                 {
-                    "Text": "South",
-                    "Target": "Porter"
+                    "Text": "Towards the light",
+                    "Target": "Hallway"
+                },
+                {
+                    "Text": "Deeper in",
+                    "Target": "Deep"
                 }
             ]
         },
-        "Porter": {
-            "Body": "This is Porter College, the trees are nice here too.",
+        "Deep": {
+            "Body": "Deeper into the cavern lies all of the more... delicate items in your hoard. Not everything is worth lying upon.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Kresge"
-                },
-                {
-                    "Text": "South",
-                    "Target": "Rachel Carson"
+                    "Text": "Back up",
+                    "Target": "Hoard"
                 }
             ]
         },
-        "Rachel Carson": {
-            "Body": "Rachel Carson College, more sun and fewer trees.",
+        "Hallway": {
+            "Body": "Your lair is at first glance merely a simple cave, with several pockets of rock leading off of it. You know better.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Porter"
+                    "Text": "Towards the allure of gold",
+                    "Target": "Hoard"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Oakes"
+                    "Text": "Towards the allure of gemstones",
+                    "Target": "Freezer"
+                },
+                {
+                    "Text": "Towards the allure of vanity",
+                    "Target": "Mirror"
+                },
+                {
+                    "Text": "Towards the allure of freedom",
+                    "Target": "Entrance"
                 }
             ]
         },
-        "Oakes": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
+        "Freezer": {
+            "Body": "A large gemstone the size of a basketball court lies embedded in the floor. It radiates cold, and lying upon it is a choice selection of items in case you get... peckish.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
+                    "Text": "Enough of that",
+                    "Target": "Hallway"
+                }
+            ]
+        },
+        "Mirror": {
+            "Body": "A large mirror leans against the wall, perfect and golden. You could swim in its depths. But you won't. Never again.",
+            "Choices": [
+                {
+                    "Text": "Pry your eyes away from the silver glass",
+                    "Target": "Hallway"
+                }
+            ]
+        },
+        "Entrance": {
+            "Body": "The entrance to your lair looks out upon the treetops. A world spreads itself before your watchful gaze, full of possibilities.",
+            "Choices": [
+                {
+                    "Text": "Stick around",
+                    "Target": "Hallway"
                 },
                 {
-                    "Text": "South",
+                    "Text": "Rule the skies",
+                    "Target": "Sky"
+                }
+            ]
+        },
+        "Sky": {
+            "Body": "The endless skies call to you, full of fluffy clouds and birds who know better than to fly in your way. Below you are fields full of golden wheat and plains full of raw filet mignon. You can hear the moos as they chew the grass and what wheat they can reach.",
+            "Choices": [
+                {
+                    "Text": "Enough flying",
+                    "Target": "Entrance"
+                },
+                {
+                    "Text": "Add to your hoard",
                     "Target": "Beyond"
                 }
             ]
         },
         "Beyond": {
-            "Body": "Grass, don't forget to check for ticks!"
+            "Body": "Angling your body to catch the flowing wind, you fly towards a nearby kingdom. They usually have tidbits to add to your hoard, and royalty with which to cook filet mignon. Princesses, usually. It always comes down to princesses, doesn't it?"
         }
     }
 }
