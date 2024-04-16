@@ -61,6 +61,36 @@
                 {
                     "Text": "Pry your eyes away from the silver glass",
                     "Target": "Hallway"
+                },
+                {
+                    "Text": "Look into the mirror anyways",
+                    "Target": "Rejection"
+                }
+            ]
+        },
+        "Rejection": {
+            "Body": "Perhaps, just a small peek into it's depths... No, you just can't do it. You can't go through that again.",
+            "Choices": [
+                {
+                    "Text": "Pry your eyes away from the silver glass",
+                    "Target": "Mirror"
+                },
+                {
+                    "Text": "Really try to look into the mirror",
+                    "Target": "Again"
+                }
+            ]
+        },
+        "Again": {
+            "Body": "No, you can't bring yourself to meet your own gaze. You know what will happen. Just thinking about it makes you shudder.",
+            "Choices": [
+                {
+                    "Text": "Pry your eyes away from the silver glass",
+                    "Target": "Mirror"
+                },
+                {
+                    "Text": "Maybe one more shot?",
+                    "Target": "Rejection"
                 }
             ]
         },
@@ -91,7 +121,50 @@
             ]
         },
         "Beyond": {
-            "Body": "Angling your body to catch the flowing wind, you fly towards a nearby kingdom. They usually have tidbits to add to your hoard, and royalty with which to cook filet mignon. Princesses, usually. It always comes down to princesses, doesn't it?"
+            "Body": "Angling your body to catch the flowing wind, you fly towards a nearby kingdom. They usually have tidbits to add to your hoard, and royalty with which to cook filet mignon. Princesses, usually. It always comes down to princesses, doesn't it?",
+            "Choices": [
+                {
+                    "Text": "Sweet, sweet filet mignon, mmm...",
+                    "Target": "Kingdom"
+                }
+            ]
+        },
+        "Kingdom": {
+            "Body": "You arrive at the kingdom, a dainty little wooden town surrounding a positively quaint castle. It has big walls and a nice moat full of fish, but neither will be able to stop you.",
+            "Choices": [
+                {
+                    "Text": "Burn down the village and raid the treasury",
+                    "Target": "Destruction"
+                },
+                {
+                    "Text": "Kidnap the Princess",
+                    "Target": "Princess"
+                }
+            ]
+        },
+        "Princess": {
+            "Body": "With such flimsy walls, there's nothing stopping you from just reaching into the highest tower and grabbing the princess. You and her quickly come to an understanding, and merely five minutes later you are flying back to your hoard. The princess will be worth quite a hefty ransom, and in the meantime she can cook cows into filet mignon for you. Finally, your goals have been achieved.",
+            "Choices": [
+                {
+                    "Text": "That's enough work for today.",
+                    "Target": "Better End"
+                }
+            ]
+        },
+        "Destruction": {
+            "Body": "There are no walls you could not break or burn, and no knight mighty enough to pierce your invincible hide. A brisk 30 minute rampage later, and the castle has crumbled as the village burns to the ground. You've eaten your fill, and rustling around in the ruins of the castle gets you a small handful of treasure.",
+            "Choices": [
+                {
+                    "Text": "That's enough work for today.",
+                    "Target": "Bad End"
+                }
+            ]
+        },
+        "Better End": {
+            "Body": "Refreshed and looking forward to the future, you return to your hoard with your ill-gotten gains. It's been a successful day, and you cannot wait to taste the princess' cooking. Or, for that matter, the reward the kingdom will surely give for her return. The future is looking bright and tasty!"
+        },
+        "Bad End": {
+            "Body": "Tired, you return to your hoard with your ill-gotten gains. It's been a successful day, although you'll be in trouble next time you awaken. Every time you do this, you have to fly farther and farther to find new kingdoms to raid. Perhaps there's a more efficient method to gain gold and food, if you can find it..."
         }
     }
 }
