@@ -3,6 +3,8 @@ class Start extends Scene {
         let story = this.engine.storyData;
         this.engine.setTitle(story.Title); // TODO: replace this text using this.engine.storyData to find the story title
         this.engine.addChoice("Begin the story");
+        this.engine.fullBelly = false
+        this.engine.item = 0;
     }
 
     handleChoice() {
@@ -18,11 +20,21 @@ class Location extends Scene {
         
         if(locationData.Choices) { // TODO: check if the location has any Choices
             for(let choice of locationData.Choices) { // TODO: loop over the location's Choices
-                this.engine.addChoice(choice.Text, choice); // TODO: use the Text of the choice
+                if (choice.Full != null) {
+                    if (choice.Full == this.engine.fullBelly) {
+                        this.engine.addChoice(choice.Text, choice);
+                    }
+                } else {
+                    this.engine.addChoice(choice.Text, choice);
+                } // TODO: use the Text of the choice
                 // TODO: add a useful second argument to addChoice so that the current code of handleChoice below works
             }
         } else {
             this.engine.addChoice("The end.")
+        }
+
+        if(locationData.Eat) {
+            this.engine.show(this.engine.fullBelly)
         }
     }
 

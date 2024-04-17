@@ -52,6 +52,21 @@
                 {
                     "Text": "Enough of that",
                     "Target": "Hallway"
+                },
+                {
+                    "Text": "Eat some food",
+                    "Target": "Eating",
+                    "Full": false
+                }
+            ]
+        },
+        "Eating": {
+            "Body": "You eat some of the food on the gemstone. Your hunger has been sated, for now.",
+            "Eat": true,
+            "Choices": [
+                {
+                    "Text": "Enough of that",
+                    "Target": "Hallway"
                 }
             ]
         },
@@ -138,7 +153,8 @@
                 },
                 {
                     "Text": "Kidnap the Princess",
-                    "Target": "Princess"
+                    "Target": "Princess",
+                    "Full": true
                 }
             ]
         },
