@@ -22,6 +22,38 @@
                 {
                     "Text": "Back up",
                     "Target": "Hoard"
+                },
+                {
+                    "Text": "Review some of your more interesting items.",
+                    "Target": "Items",
+                    "Context": true
+                }
+            ]
+        },
+        "Items": {
+            "ContextSensitive": true,
+            "Length": 4,
+            "Body": [
+                {
+                    "Message": "\"Ah, the Harp of Ages. Supernaturally enhanced using temporal magic, it has lasted 2000 years without dropping a single note. A wonderful ambiance for my hoard.\""
+                },
+                {
+                    "Message": "\"I haven't seen the Nevermissing Sword in ages. It never misses its target without fail, and will never backfire on the user. It's the best toothpick I've ever had.\""
+                },
+                {
+                    "Message": "\"Ah yes, the Everflowing Chest. It expands to hold whatever is stored inside. Quite a useful enchantment to copy off of, even if it never shrinks back down. It's practically a first edition for Bags of Holding.\""
+                },
+                {
+                    "Message": "\"Oh, the Endless Jug. Pours up to a gallon of whatever is poured in it until the end of the day. I wonder what the last thing I put in it was? Hmm... Smells like olive oil.\""
+                },
+                {
+                    "Message": "\"The Crystal of Sightseeing, a wonderful item. Can see absolutely anywhere in the world with the best views available. A shame you can't control where it looks, but still a worthy addition to my hoard.\""
+                }
+            ],
+            "Choices": [
+                {
+                    "Text": "Ah, the memories",
+                    "Target": "Deep"
                 }
             ]
         },
